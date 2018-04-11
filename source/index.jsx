@@ -32,7 +32,7 @@ class App extends React.Component {
   }
 
   componentWillMount() {
-    GetArticles().them((articles) => {
+    GetArticles().then((articles) => {
       this.setState({ articles })
     });
   }
